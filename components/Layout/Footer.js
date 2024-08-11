@@ -46,9 +46,9 @@ const Footer = () => {
               />
             </div>
           </div>
-          <p className="text-gray-400">
-            ©{new Date().getFullYear()} - LaslesVPN
-          </p>
+          <a href="https://github.com/rexcare/LaslesVPN" className="text-gray-400">
+            ©{new Date().getFullYear()} - Web Portofolio
+          </a>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
@@ -77,7 +77,7 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              LaslesVPN ?{" "}
+              Web Portofolio{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               FAQ{" "}

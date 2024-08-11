@@ -24,8 +24,8 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center gap-1 sm:gap-1.5">
-            <FaUserSecret className="h-8 w-auto text-orange-500" />
-            <h3 className="text-2xl font-semibold">Ardin Nugraha</h3>
+            <FaUserSecret className="h-6 sm:h-7 w-auto text-orange-500" />
+            <h3 className="text-lg md:text-xl font-semibold">Ardin Nugraha</h3>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll

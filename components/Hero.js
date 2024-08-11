@@ -50,7 +50,7 @@ const Hero = ({
               <a className="underline decoration-orange-500">Media Sosial</a>{" "}
               saya dibawah ini.
             </p>
-            <div className="medsos flex gap-1.5 sm:gap-2 lg:gap-2.5 mb-2.5 sm:mb-3 lg:mb-4 xl:mb-5">
+            <div className="medsos flex gap-2.5 lg:gap-3 mb-2.5 sm:mb-3 lg:mb-4 xl:mb-5">
               <GrLinkedinOption className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />
               <FaInstagram className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />
               <FaGithub className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />

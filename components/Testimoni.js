@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-// import react slick
+import Link from "next/link";
 import Slider from "react-slick";
 import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
@@ -8,123 +7,48 @@ import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
-  listTestimoni = [
+  projects = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/atr.png",
+      link: "https://fe-dinas-pertanahan.vercel.app",
+      title: "ATR/BPN Jember",
+      desc: "Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/pemilu.png",
+      link: "https://pemilu.himatifunej.org",
+      title: "Pemilu HIMATIF",
+      desc: "Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/soul.png",
+      link: "https://soul-cafe.vercel.app",
+      title: "Soul Cafe App",
+      desc: "Project ini merupakan fake project fullstack dimana saya membuat website menggunakan Next JS, Tailwind CSS, Firebase dan state management menggunakan redux.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/curhatin.png",
+      link: "https://curahanhati.vercel.app",
+      title: "Curhatin",
+      desc: "Project ini merupakan tugas pada kelas dicoding pada saat program MSIB Batch 3. Project ini menggunakan React JS dan state management menggunakan redux.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/ppl.jpg",
+      link: "https://github.com/ardin2001/ppl_rev2",
+      title: "E-Chest",
+      desc: "Project ini merupakan tugas akhir mata kuliah Pengembangan Perangkat Lunak (PPL). Dimana saya berposisi sebagai programmer dengan jobdesk membuat website menggunakan Express JS dan Bootstrap CSS.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/skripsi.png",
+      link: "https://github.com/ardin2001/web-skripsi",
+      title: "Website Skripsi",
+      desc: "Project ini merupakan project skripsi, dimana menggunakan framework flask, Tailwind CSS, dan machine learning.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      image: "/project/pwa.png",
+      link: "https://github.com/ardin2001/web-skripsi",
+      title: "Restaurant catalogue",
+      desc: "Project ini merupakan latihan untuk membuat website Progressive Web App (PWA) dan implementasi module bundler (Webpack).",
     },
   ],
 }) => {
@@ -161,34 +85,19 @@ const Testimoni = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {listTestimoni.map((listTestimonis, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-              <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1">
-                  <Image
-                    src={listTestimonis.image}
-                    height={50}
-                    width={50}
-                    alt="Icon People"
-                  />
-                  <div className="flex flex-col ml-5 text-left">
-                    <p className="text-lg text-black-600 capitalize">
-                      {listTestimonis.name+index}
-                    </p>
-                    <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    <Image src={Stars} width={500} height={500} alt="Star" className="h-4 w-4" />
-                  </span>
-                </div>
-              </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+        {projects.map((project, index) => (
+          <div className="px-2 lg:px-2.5 flex items-stretch" key={index}>
+            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all p-2 lg:p-2.5">
+              <Image
+                src={project.image}
+                height={5000}
+                width={50000}
+                alt="Icon People"
+              />
+              <p className="mt-1 sm:mt-1.5 xl:mt-2 text-lg text-black-600 capitalize text-start">
+                {project.title}
+              </p>
+              <p className="text-left">“{project.desc.length > 112 ? project.desc.slice(0, 100) + "..." : project.desc}”</p>
             </div>
           </div>
         ))}
@@ -199,13 +108,25 @@ const Testimoni = ({
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
-            <Image src={ArrowBack} width={500} height={500} alt="ArrowNext" className="h-6 w-6" />
+            <Image
+              src={ArrowBack}
+              width={500}
+              height={500}
+              alt="ArrowNext"
+              className="h-6 w-6"
+            />
           </div>
           <div
             className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
-            <Image src={ArrowNext} width={500} height={500} alt="ArrowNext" className="h-6 w-6" />
+            <Image
+              src={ArrowNext}
+              width={500}
+              height={500}
+              alt="ArrowNext"
+              className="h-6 w-6"
+            />
           </div>
         </div>
       </div>
