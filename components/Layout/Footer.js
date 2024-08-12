@@ -1,8 +1,8 @@
 import React from "react";
 import { FaUserSecret } from "react-icons/fa";
-import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
+import { GrLinkedinOption } from "react-icons/gr";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -19,31 +19,13 @@ const Footer = () => {
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Image
-                src={Facebook}
-                width={500}
-                height={500}
-                alt="facebook"
-                className="h-6 w-6"
-              />
+              <FaGithub className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Image
-                src={Twitter}
-                width={500}
-                height={500}
-                alt="Twitter"
-                className="h-6 w-6"
-              />
+              <FaInstagram className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Image
-                src={Instagram}
-                width={500}
-                height={500}
-                alt="Instagram"
-                className="h-6 w-6"
-              />
+              <FaUserSecret className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
             </div>
           </div>
           <a href="https://github.com/rexcare/LaslesVPN" className="text-gray-400">

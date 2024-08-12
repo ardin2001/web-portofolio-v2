@@ -36,7 +36,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
+                className="flex flex-col w-full justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -68,7 +68,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
+                className="flex flex-col w-full justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -100,7 +100,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
+                className="flex flex-col w-full justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-8 hover:border-2 hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {

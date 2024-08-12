@@ -10,7 +10,7 @@ const features = [
   "Design UI/UX",
   "Machine Learning",
   "Datamining or Textmining",
-  "Mcrosoft Excel"
+  "Microsoft Office"
 ];
 
 const Feature = () => {

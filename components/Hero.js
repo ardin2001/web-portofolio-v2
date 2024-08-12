@@ -50,12 +50,12 @@ const Hero = ({
               <a className="underline decoration-orange-500">Media Sosial</a>{" "}
               saya dibawah ini.
             </p>
-            <div className="medsos flex gap-2.5 lg:gap-3 mb-2.5 sm:mb-3 lg:mb-4 xl:mb-5 w-full">
-              <GrLinkedinOption className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />
-              <FaInstagram className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />
-              <FaGithub className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom" />
+            <div className="medsos flex">
+              <GrLinkedinOption className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
+              <FaInstagram className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
+              <FaGithub className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
             </div>
-            <ButtonPrimary>Download</ButtonPrimary>
+            <ButtonPrimary addClass="bg-green-500 mt-2.5 sm:mt-3 lg:mt-4">Download</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
