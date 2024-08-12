@@ -19,7 +19,6 @@ const Feature = () => {
   return (
     <div
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
@@ -43,9 +42,9 @@ const Feature = () => {
               About Me
             </h3>
             <p className="my-2 text-black-500 text-justify">
-              A recent graduate from the Information Technology department,
-              Faculty of Computer Science at the University of Jember with a GPA
-              of 3.91. I have experience as a laboratory assistant, involvement
+              A recent graduate from the <a className="underline decoration-orange-500">Information Technology</a> department, Faculty of 
+              <a className="underline decoration-orange-500">Computer Science</a> at the <a className="underline decoration-orange-500">University of Jember</a> with a GPA
+              of <a className="underline decoration-orange-500">3.91</a>. I have experience as a laboratory assistant, involvement
               in student organizations, and working on several information
               system projects. I am interested in several fields including:
             </p>

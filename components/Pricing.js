@@ -12,26 +12,25 @@ const Pricing = () => {
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="pricing"
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full" id="techstack">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+              
             >
-              Tech Stack
+              Tech <span className="text-orange-500"id="techstack">Stack</span>
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal sm:w-10/12 lg:w-8/12 mx-auto my-2 text-center"
             >
-              Berikut merupakan beberapa tech stack yang pernah saya pelajari
-              selama perkuliahan untuk mengembangkan aplikasi.
+              The following are some of the tech stacks that I have learned during lectures in developing applications.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 py-8 lg:py-12 px-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 pb-8 lg:pb-12 pt-4 lg:pt-6 px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -218,46 +217,44 @@ const Pricing = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="flex flex-col w-full my-16" id="project">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
-              Trusted by Thousands of Happy Customer{" "}
+              Projects{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12"
             >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
+              These are some of my <a className="underline decoration-orange-500">client projects</a> and <a className="underline decoration-orange-500">practice projects</a> while learning to develop website-based applications.
             </motion.p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+          <ScrollAnimationWrapper className="w-full flex flex-col pt-6 pb-12">
             <motion.div variants={scrollAnimation}>
               <Testimoni />
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
 
-        <div className="flex flex-col w-full mb-16" id="testimoni">
+        <div className="flex flex-col w-full mb-16" id="certificate">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-orange-500 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
-              Trusted by Thousands of Happy Customer{" "}
+              Certificates{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12"
             >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
+              These are some of the <a className="underline decoration-orange-500">certificates</a> I have received in the fields of <a className="underline decoration-orange-500">Frontend Web, Backend, Data Visualization,</a> and <a className="underline decoration-orange-500">Excel</a>.
             </motion.p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+          <ScrollAnimationWrapper className="w-full flex flex-col pt-6 pb-12">
             <motion.div variants={scrollAnimation}>
               <Certificate />
             </motion.div>

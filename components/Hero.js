@@ -11,19 +11,19 @@ import { FaGithub } from "react-icons/fa";
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      name: "Frontend Web",
+      number: "4",
+      icon: "/techstack/fe.png",
     },
     {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "Backend",
+      number: "1",
+      icon: "/techstack/backend.png",
     },
     {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Fullstack Web",
+      number: "2",
+      icon: "/techstack/fullstack.png",
     },
   ],
 }) => {
@@ -42,13 +42,13 @@ const Hero = ({
               <strong className="text-orange-500">Ardin Nugraha.</strong>
             </h1>
             <p className="text-black-500 mt-4 mb-1 sm:mb-1.5">
-              Jika anda tertarik, anda dapat melihat{" "}
+            If you are interested, you can see my{" "}
               <a className="underline decoration-orange-500">
               Curriculum Vitae (CV)
               </a>{" "}
-              dan{" "}
-              <a className="underline decoration-orange-500">Media Sosial</a>{" "}
-              saya dibawah ini.
+              and{" "}
+              <a className="underline decoration-orange-500">Social Media</a>{" "}
+              below.
             </p>
             <div className="medsos flex">
               <GrLinkedinOption className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
@@ -81,12 +81,12 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                  <img src={listUsers.icon} className="h-6 w-6" />
+                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full overflow-hidden">
+                  <img src={listUsers.icon} className="h-8 w-8" />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {listUsers.number}
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>

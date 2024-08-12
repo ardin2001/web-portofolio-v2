@@ -97,7 +97,16 @@ const Testimoni = ({
               <p className="mt-1 sm:mt-1.5 xl:mt-2 text-lg text-black-600 capitalize text-start">
                 {project.title}
               </p>
-              <p className="text-left">“{project.desc.length > 112 ? project.desc.slice(0, 100) + "..." : project.desc}”</p>
+              <p className="text-left">
+                “
+                {project.desc.length > 112
+                  ? project.desc.slice(0, 100) + "..."
+                  : project.desc}
+                ”
+              </p>
+              <div className="btn-view mt-2 sm:mt-2.5 flex justify-end">
+                <a href={project.link} className="bg-orange-500 text-white-500 px-8 py-0.5 justify-self-end">View</a>
+              </div>
             </div>
           </div>
         ))}
