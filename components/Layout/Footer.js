@@ -3,7 +3,6 @@ import { FaUserSecret } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -25,7 +24,7 @@ const Footer = () => {
               <FaInstagram className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <FaUserSecret className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
+              <GrLinkedinOption className="h-3 w-3 lg:h-4 lg:w-4 text-orange-500" />
             </div>
           </div>
           <a href="https://github.com/rexcare/LaslesVPN" className="text-gray-400">

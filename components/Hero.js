@@ -42,20 +42,26 @@ const Hero = ({
               <strong className="text-orange-500">Ardin Nugraha.</strong>
             </h1>
             <p className="text-black-500 mt-4 mb-1 sm:mb-1.5">
-            If you are interested, you can see my{" "}
+              If you are interested, you can see my{" "}
               <a className="underline decoration-orange-500">
-              Curriculum Vitae (CV)
+                Curriculum Vitae (CV)
               </a>{" "}
               and{" "}
               <a className="underline decoration-orange-500">Social Media</a>{" "}
               below.
             </p>
             <div className="medsos flex">
-              <GrLinkedinOption className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
-              <FaInstagram className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
-              <FaGithub className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
+              <a href="https://www.linkedin.com/in/ardin-nugraha-b2536324b" className="shadow-custom  mr-2 sm:mr-2.5 lg:mr-3 p-1 lg:p-1.5 rounded-full">
+                <GrLinkedinOption className="text-orange-500 text-xl" />
+              </a>
+              <a href="/" className="shadow-custom  mr-2 sm:mr-2.5 lg:mr-3 p-1 lg:p-1.5 rounded-full">
+                <FaInstagram className="text-orange-500 text-xl" />
+              </a>
+              <a href="https://github.com/ardin2001" className="shadow-custom  mr-2 sm:mr-2.5 lg:mr-3 p-1 lg:p-1.5 rounded-full">
+                <FaGithub className="text-orange-500 text-xl" />
+              </a>
             </div>
-            <br/>
+            <br />
             <ButtonPrimary>Download</ButtonPrimary>
           </div>
           <div className="flex w-full">
