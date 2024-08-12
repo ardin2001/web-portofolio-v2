@@ -58,7 +58,7 @@ const Certificate = ({
       <div className="flex w-full items-center justify-center">
         <div className="flex flex-none justify-between w-auto mt-4 sm:mt-6 lg:mt-8">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border dark:bg-orange-500 dark:hover:bg-white-300 hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <Image
@@ -70,7 +70,7 @@ const Certificate = ({
             />
           </div>
           <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border dark:bg-orange-500 dark:hover:bg-white-300 hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <Image
