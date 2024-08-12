@@ -24,7 +24,7 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center gap-1 sm:gap-1.5">
             <FaUserSecret className="h-6 sm:h-7 w-auto text-orange-500" />
-            <h3 className="text-lg md:text-xl font-semibold">Ardin Nugraha</h3>
+            <h3 className="text-lg md:text-xl font-semibold dark:text-white-300">Ardin Nugraha</h3>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -40,7 +40,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
                   ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 a")
+                  : " text-black-500 hover:text-orange-500 dark:text-white-300 ")
               }
             >
               About
@@ -58,7 +58,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "techstack"
                   ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  : " text-black-500 hover:text-orange-500 dark:text-white-300 ")
               }
             >
               TechStack
@@ -76,7 +76,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "project"
                   ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  : " text-black-500 hover:text-orange-500 dark:text-white-300 ")
               }
             >
               Project
@@ -94,7 +94,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "certificate"
                   ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  : " text-black-500 hover:text-orange-500 dark:text-white-300 ")
               }
             >
               Certificate
@@ -108,7 +108,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t">
+      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 shadow-t">
         <div className="bg-white-500 sm:px-3 dark:bg-black-400">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
@@ -124,7 +124,7 @@ const Header = () => {
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
                   ? "  border-orange-500 text-orange-500"
-                  : " border-transparent")
+                  : " border-transparent dark:text-white-300")
               }
             >
               <svg
@@ -156,7 +156,7 @@ const Header = () => {
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "techstack"
                   ? "  border-orange-500 text-orange-500"
-                  : " border-transparent ")
+                  : " border-transparent dark:text-white-300 ")
               }
             >
               <svg
@@ -188,7 +188,7 @@ const Header = () => {
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "project"
                   ? "  border-orange-500 text-orange-500"
-                  : " border-transparent ")
+                  : " border-transparent dark:text-white-300")
               }
             >
               <svg
@@ -220,7 +220,7 @@ const Header = () => {
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "certificate"
                   ? "  border-orange-500 text-orange-500"
-                  : " border-transparent ")
+                  : " border-transparent dark:text-white-300 ")
               }
             >
               <svg

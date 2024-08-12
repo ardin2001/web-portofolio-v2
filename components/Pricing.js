@@ -11,21 +11,21 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14 "
+      className="bg-gradient-to-b bg-white-500 dark:bg-black-400 w-full py-14 "
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full dark:bg-black-400" id="techstack">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 dark:text-white-300 leading-relaxed"
               
             >
               Tech <span className="text-orange-500"id="techstack">Stack</span>
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal sm:w-10/12 lg:w-8/12 mx-auto my-2 text-center"
+              className="leading-normal sm:w-10/12 lg:w-8/12 mx-auto my-2 text-center dark:text-white-300"
             >
               The following are some of the tech stacks that I have learned during lectures in developing applications.
             </motion.p>
@@ -50,10 +50,10 @@ const Pricing = () => {
                     alt="Programming Language"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   Programming Language
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">Javascript</li>
                   <li className="relative check custom-list">Golang (Go)</li>
                   <li className="relative check custom-list">Python</li>
@@ -82,10 +82,10 @@ const Pricing = () => {
                     alt="Frontend Development"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   Frontend Development
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">HTML</li>
                   <li className="relative check custom-list">CSS</li>
                   <li className="relative check custom-list">Bootstrap</li>
@@ -114,10 +114,10 @@ const Pricing = () => {
                     alt="Backend Development"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   Backend Development
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">Express</li>
                   <li className="relative check custom-list">Echo</li>
                   <li className="relative check custom-list">Firebase</li>
@@ -144,10 +144,10 @@ const Pricing = () => {
                     alt="Data Science"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   Data Science
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">Machine Learning</li>
                   <li className="relative check custom-list">Datamining</li>
                   <li className="relative check custom-list">Textmining</li>
@@ -175,10 +175,10 @@ const Pricing = () => {
                     alt="DevOps"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   DevOps
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">AWS</li>
                   <li className="relative check custom-list">Docker</li>
                 </ul>
@@ -204,10 +204,10 @@ const Pricing = () => {
                     alt="Software"
                   />
                 </div>
-                <p className="text-lg text-black-600 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
+                <p className="text-lg text-black-600 dark:text-white-300 font-medium capitalize mt-2 sm:mt-4 mb-0.5 sm:mb-1">
                   Software
                 </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 dark:text-white-300 flex-grow gap-1 sm:gap-1.5 lg:gap-2">
                   <li className="relative check custom-list">Git</li>
                   <li className="relative check custom-list">Adobe Photoshop</li>
                   <li className="relative check custom-list">Figma</li>
@@ -221,13 +221,13 @@ const Pricing = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 dark:text-white-300 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
               Projects{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12"
+              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12 dark:text-white-300"
             >
               These are some of my <a className="underline decoration-orange-500">client projects</a> and <a className="underline decoration-orange-500">practice projects</a> while learning to develop website-based applications.
             </motion.p>
@@ -249,7 +249,7 @@ const Pricing = () => {
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12"
+              className="leading-normal mx-auto mb-2 mt-4 w-11/12 sm:w-9/12 lg:w-7/12 dark:text-white-300"
             >
               These are some of the <a className="underline decoration-orange-500">certificates</a> I have received in the fields of <a className="underline decoration-orange-500">Frontend Web, Backend, Data Visualization,</a> and <a className="underline decoration-orange-500">Excel</a>.
             </motion.p>

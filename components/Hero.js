@@ -37,11 +37,11 @@ const Hero = ({
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 ">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 dark:text-white-500 leading-normal">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 dark:text-white-300 leading-normal">
               Hello I&apos;am{" "}
               <strong className="text-orange-500">Ardin Nugraha.</strong>
             </h1>
-            <p className="text-black-500 dark:text-white-500 mt-4 mb-1 sm:mb-1.5">
+            <p className="text-black-500 dark:text-white-300 mt-4 mb-1 sm:mb-1.5">
               If you are interested, you can see my{" "}
               <a className="underline decoration-orange-500">
                 Curriculum Vitae (CV)
@@ -78,7 +78,7 @@ const Hero = ({
         </motion.div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
-        <ScrollAnimationWrapper className="rounded-lg w-full bg-white-500 dark:bg-black-400 grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 z-10">
+        <ScrollAnimationWrapper className="rounded-lg w-full bg-white-500 dark:bg-orange-500 grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
               className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
@@ -87,14 +87,14 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center w-12 h-12 mr-6 rounded-full overflow-hidden">
+                <div className="flex items-center justify-center w-12 h-12 mr-6 rounded-full overflow-hidden bg-white-300">
                   <img src={listUsers.icon} className="h-8 w-8" />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
                     {listUsers.number}
                   </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
+                  <p className="text-lg text-black-500 dark:text-black-400">{listUsers.name}</p>
                 </div>
               </div>
             </motion.div>

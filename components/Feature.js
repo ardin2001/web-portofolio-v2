@@ -41,14 +41,14 @@ const Feature = () => {
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-orange-500">
               About Me
             </h3>
-            <p className="my-2 text-black-500 text-justify">
+            <p className="my-2 text-black-500 dark:text-white-300 text-justify">
               A recent graduate from the <a className="underline decoration-orange-500">Information Technology</a> department, Faculty of 
               <a className="underline decoration-orange-500">Computer Science</a> at the <a className="underline decoration-orange-500">University of Jember</a> with a GPA
               of <a className="underline decoration-orange-500">3.91</a>. I have experience as a laboratory assistant, involvement
               in student organizations, and working on several information
               system projects. I am interested in several fields including:
             </p>
-            <ul className="text-black-500 self-start list-inside ml-8">
+            <ul className="text-black-500 dark:text-white-300 self-start list-inside ml-8">
               {features.map((feature, index) => (
                 <motion.li
                   className="relative circle-check custom-list mb-0.5 lg:mb-1"

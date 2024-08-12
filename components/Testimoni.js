@@ -94,10 +94,10 @@ const Testimoni = ({
                 width={50000}
                 alt="Icon People"
               />
-              <p className="mt-1 sm:mt-1.5 xl:mt-2 text-lg text-black-600 capitalize text-start">
+              <p className="mt-1 sm:mt-1.5 xl:mt-2 text-lg text-black-600 dark:text-orange-500 capitalize text-start">
                 {project.title}
               </p>
-              <p className="text-left">
+              <p className="text-left dark:text-white-300">
                 “
                 {project.desc.length > 112
                   ? project.desc.slice(0, 100) + "..."
