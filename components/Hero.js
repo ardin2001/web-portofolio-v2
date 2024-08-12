@@ -51,13 +51,13 @@ const Hero = ({
               below.
             </p>
             <div className="medsos flex">
-              <a href="https://www.linkedin.com/in/ardin-nugraha-b2536324b" className="shadow-custom dark:shadow-custom-dark mr-2.5 sm:mr-3 lg:mr-3.5 p-1 lg:p-1.5 rounded-full">
+              <a href="https://www.linkedin.com/in/ardin-nugraha-b2536324b" className="shadow-custom dark:shadow-custom-dark mr-3 p-1 lg:p-1.5 rounded-full">
                 <GrLinkedinOption className="text-orange-500 text-xl" />
               </a>
-              <a href="/" className="shadow-custom  dark:shadow-custom-dark mr-2.5 sm:mr-3 lg:mr-3.5 p-1 lg:p-1.5 rounded-full">
+              <a href="/" className="shadow-custom  dark:shadow-custom-dark mr-3 p-1 lg:p-1.5 rounded-full">
                 <FaInstagram className="text-orange-500 text-xl" />
               </a>
-              <a href="https://github.com/ardin2001" className="shadow-custom  dark:shadow-custom-dark mr-2.5 sm:mr-3 lg:mr-3.5 p-1 lg:p-1.5 rounded-full">
+              <a href="https://github.com/ardin2001" className="shadow-custom  dark:shadow-custom-dark mr-3 p-1 lg:p-1.5 rounded-full">
                 <FaGithub className="text-orange-500 text-xl" />
               </a>
             </div>
