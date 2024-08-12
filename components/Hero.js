@@ -55,7 +55,8 @@ const Hero = ({
               <FaInstagram className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
               <FaGithub className="bg-white-500 text-orange-500 p-1.5 text-3xl rounded-full shadow-custom mr-2 sm:mr-2.5 lg:mr-3" />
             </div>
-            <ButtonPrimary addClass="bg-green-500 mt-2.5 sm:mt-3 lg:mt-4">Download</ButtonPrimary>
+            <br/>
+            <ButtonPrimary>Download</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
