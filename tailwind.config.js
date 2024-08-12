@@ -18,7 +18,8 @@ module.exports = {
       orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
       none: "none",
-      custom : "0px 0px 5px 2.5px rgba(245,56,56,0.35) ",
+      custom : "0px 0px 5px 2.5px rgba(245,56,56,0.35)",
+      "custom-dark" : "0px 0px 5px 2.5px rgba(255, 250, 250,0.35)",
     },
     colors: {
       transparent: "transparent",

@@ -11,10 +11,10 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14 "
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full" id="techstack">
+        <div className="flex flex-col w-full dark:bg-black-400" id="techstack">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -217,7 +217,7 @@ const Pricing = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16" id="project">
+        <div className="flex flex-col w-full my-16 dark:bg-black-400" id="project">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -239,7 +239,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
         </div>
 
-        <div className="flex flex-col w-full mb-16" id="certificate">
+        <div className="flex flex-col w-full mb-16 dark:bg-black-400" id="certificate">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}

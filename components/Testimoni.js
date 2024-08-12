@@ -83,7 +83,7 @@ const Testimoni = ({
         {...settings}
         arrows={false}
         ref={setSliderRef}
-        className="flex items-stretch justify-items-stretch"
+        className="flex items-stretch justify-items-stretch dark:bg-black-400"
       >
         {projects.map((project, index) => (
           <div className="px-2 lg:px-2.5 flex items-stretch" key={index}>
