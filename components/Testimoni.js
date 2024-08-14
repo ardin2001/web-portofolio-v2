@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import Slider from "react-slick";
 import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
@@ -10,7 +8,7 @@ const Testimoni = ({
   projects = [
     {
       image: "/project/atr.png",
-      link: "https://fe-dinas-pertanahan.vercel.app",
+      link: "https://kantah-dev.vercel.app",
       title: "ATR/BPN Jember",
       desc: "Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS.",
     },
