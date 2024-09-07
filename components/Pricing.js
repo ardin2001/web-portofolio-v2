@@ -90,7 +90,9 @@ const Pricing = () => {
                   <li className="relative check custom-list">CSS</li>
                   <li className="relative check custom-list">Bootstrap</li>
                   <li className="relative check custom-list">Tailwind</li>
+                  <li className="relative check custom-list">React JS</li>
                   <li className="relative check custom-list">Next JS</li>
+                  <li className="relative check custom-list">Vue JS</li>
                 </ul>
               </motion.div>
             </ScrollAnimationWrapper>
